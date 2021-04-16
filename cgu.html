@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <title>Mypoki - Fresh Hawaiian Food</title>
+    </head>
+    <body>
+
+        <!---- SCROLL TOP --------->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+        <!-------- ACCUEIL -------->
+        <header id="navbar" class="bg_offwhite">
+            <div class="toggle" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+                <a href="#" class="logoRow" ><img src="images/Logo.svg" class="logo" width="110px"></a>
+                <div id="nav-menu">
+                    <ul class="navigation">
+                        <li><a href="#Accueil" class="nav-link">Accueil<span class="color-active"></span></a></li>
+                        <li><a href="#Apropos" class="nav-link">À propos<span class="color-active"></span></a></li>
+                        <li><a href="#Menu" class="nav-link">Le Menu<span class="color-active"></span></a></li>
+                        <li><a href="#LesSignatures" class="nav-link">Les signatures<span class="color-active"></span></a></li>
+                        <li><a href="#LesIngredients" class="nav-link">Nos ingrédients<span class="color-active"></span></a></li>
+                        <li><a href="#Contact" class="nav-link">Contact<span class="color-active"></span></a></li>
+                    </ul>
+                </div>
+                <div class="order-now-button">
+                  <a href="#">Commander</a>
+                </div>
+            
+        </header>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Mypoki</h4>
+                        <ul>
+                            <li>115 Rue du Faubourg Saint-Antoine,<br>
+                                75011 Paris, France<br>
+                                Tel : 01 43 07 58 11
+                                <a href="#"></a></li>
+                            <li>52 Rue de Paris,<br>
+                                94300 Vincennes, France<br>
+                                Tel : 01 46 81 44 59<a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Horaires</h4>
+                        <ul>
+                            <li><span>Lundi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Mardi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Mercredi  </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Jeudi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Vendredi  </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Samedi    </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Dimanche  </span><span>11h - 15h30</span><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul>
+                          <li><a href="#Accueil" class="nav-link">Accueil</a></li>
+                          <li><a href="#Apropos" class="nav-link">À propos</a></li>
+                          <li><a href="#Menu" class="nav-link">Le Menu</a></li>
+                          <li><a href="#LesSignatures" class="nav-link">Les signatures</a></li>
+                          <li><a href="#LesIngredients" class="nav-link">Nos ingrédients</a></li>
+                          <li><a href="#Contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mypoki.fr/?ref=page_internal"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/mypoki/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script src="insta/dist/InstagramFeed.min.js"></script>
+        <script>
+            (function(){
+                new InstagramFeed({
+                    'username': 'mypoki',
+                    'container': document.getElementById("instagram-feed1"),
+                    'display_profile': false,
+                    'display_biography': false,
+                    'display_gallery': true,
+                    'display_captions': true,
+                    'max_tries': 8,
+                    'callback': null,
+                    'styling': true,
+                    'items': 8,
+                    'items_per_row': 4,
+                    'margin': 1,
+                    'lazy_load': true,
+                    'on_error': console.error
+                });
+            })();
+        </script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    </body>
+</html>

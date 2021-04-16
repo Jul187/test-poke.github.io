@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <title>Mypoki - Fresh Hawaiian Food</title>
+    </head>
+    <body>
+
+        <!---- SCROLL TOP --------->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+        <!-------- ACCUEIL -------->
+        <header id="navbar" class="bg_offwhite">
+            <div class="toggle" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+                <a href="#" class="logoRow" ><img src="images/Logo.svg" class="logo" width="110px"></a>
+                <div id="nav-menu">
+                    <ul class="navigation">
+                        <li><a href="#Accueil" class="nav-link">Accueil<span class="color-active"></span></a></li>
+                        <li><a href="#Apropos" class="nav-link">À propos<span class="color-active"></span></a></li>
+                        <li><a href="#Menu" class="nav-link">Le Menu<span class="color-active"></span></a></li>
+                        <li><a href="#LesSignatures" class="nav-link">Les signatures<span class="color-active"></span></a></li>
+                        <li><a href="#LesIngredients" class="nav-link">Nos ingrédients<span class="color-active"></span></a></li>
+                        <li><a href="#Contact" class="nav-link">Contact<span class="color-active"></span></a></li>
+                    </ul>
+                </div>
+                <div class="order-now-button">
+                  <a href="#">Commander</a>
+                </div>
+            
+        </header>
+        <section id="Accueil" class="section_class section_accueil">
+            <div class="circle"></div>
+            
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just a poke<br>It's <span id="mainText">Mypoki</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur repudiandae repellat blanditiis aperiam earum dolorem neque similique animi, sequi nobis facere quod odio amet in dicta itaque. Eos, cumque aperiam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/home/homme1.png" class="mypoki">
+                </div>
+                <ul class="thumb">
+                    <li><img src="images/home/thumb/1.png" onclick="imgSlider('images/home/homme1.png');changeCirckeColor('#00BFFF')"></li>
+                    <li><img src="images/home/thumb/2.png" onclick="imgSlider('images/home/homme2.png');changeCirckeColor('#ADD8E6')"></li>
+                    <li><img src="images/home/thumb/3.png" onclick="imgSlider('images/home/homme3.png');changeCirckeColor('#FFA07A')"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"><img src="/images/social_media/facebook.png"></a></li>
+                    <li><a href="#"><img src="/images/social_media/instagram.png"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-------- START A PROPOS -------->
+        <section class="about section bd-containe bg_grey" id="Apropos">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <!----- DELIMITER 20PX -->
+                    <div class="delimiter"></div>
+                    <!----- DELIMITER 20PX -->
+                    <h3 class="section-subtitle">À propos</h2>
+                        <h2 class="section-title">Mypoki vous fait déguster les authentiques saveurs du poké bowl!</h3>
+                        <p class="margin__p">Le Poké est un plat Hawaiien composé de quatre éléments majeurs: une base de riz, des protéines, des fruits et légumes frais, ainsi qu'une sauce pour mariner le tout.</p>
+                        <p class="margin__p">Largement influencé par la diaspora japonaise à Hawaii, ce plat de pêcheurs composé de dés de poisson cru fait maintenant l'unanimité en Californie, mais aussi à New-York ou encore Londres. Prenant racine sur la côte Ouest Americaine, Mypoki vous apporte ce mélange de saveurs à Paris.</p>
+                        <p class="margin__p">Nous nous engageons à utiliser des produits de qualité soigneusement sélectionnés auprès de maraichers locaux, tout en misant sur du poisson labélisé, livré puis decoupé chaque matin pour vous offrir un maximum de fraîcheur.</p>
+                        <p class="margin__p">Chez Mypoki, vous composez votre bol selon vos envies avec de savoureux produits de saison, et pour les plus indécis une gamme de 'Signatures du Chef' vous est proposée.</p>
+                </div>
+            </div>
+            <div class="image_two">
+                <img src="/images/mypoki-first-slide.jpg" alt="A propos de" class="about__img">
+                <img src="/images/mypoki-second-slide.jpg" alt="A propos de" class="about__img">
+            </div>
+            
+        </section>
+        <!--------- END A PROPOS ---------->
+
+         <!-------- START MENU -------->
+         <section class="bg_section_menu" id="Menu">
+            <div class="bd-container">
+                <div class="delimiter"></div>
+                <h3 class="section-subtitle">Notre menu</h3>
+                <h2 class="section-title">Découvrez notre menu!</h2>
+                <div class="grid-two">
+                        <div class="menu-bg-1"></div>
+                        <div class="menu-bg-2"></div>
+                </div>
+            </div> 
+        </section>
+        <!--------- END Menu ---------->
+        <!-------- START LES SPECIALITÉS -------->
+        <section class="section_class" id="LesSignatures" >
+            <div class="section bd-container">
+                <div class="carte-container">
+                    <!--- SALMON BOWL-->
+                    <div class="delimiter"></div>
+                    <h3 class="section-subtitle">Les signatures du chef</h3>
+            <h2 class="section-title">Découvrez les signatures du chef!</h2>
+            <!----- DELIMITER 20PX -->
+            <div class="delimiter"></div>
+            <!----- DELIMITER 20PX -->
+            <div class="grid-three">
+                <div class="carte">
+                    <div class="divImg salmon-bg"></div>
+                    <div class="titre">
+                        Salmon Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row2/saumon.png" alt="" class="icone-24">
+                        <span>Saumon</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, saumon nature, 
+                        avocat, carotte, edamame, poivron, graine de sésame, oignons frits.
+                    </div>
+                </div>
+                <!--- MAHALO BOWL-->
+                <div class="carte">
+                    <div class="divImg mahalo-bg"></div>
+                    <div class="titre">
+                        Mahalo Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="grand-bowl" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="petit-bowl" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row2/crevettes.png" alt="crevette mariné" class="icone-24">
+                        <span>Crevette</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, crevette mariné, 
+                        avocat, ananas, maïs, radis, graine de sésame, oignons frits.
+                    </div>
+                </div>
+                <!--- CHICKEN BOWL-->
+                <div class="carte">
+                    <div class="divImg chicken-bg"></div>
+                    <div class="titre">
+                        Chicken Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row2/saumon.png" alt="" class="icone-24">
+                        <span>Poulet</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, poulet teriyaki, 
+                        avocat, tomate cerise, edamame, oignon rouge, graine de sésame.
+                    </div>
+                </div>
+                <!--- VEGGIE BOWL-->
+                <div class="carte">
+                    <div class="divImg veggie-bg"></div>
+                    <div class="titre">
+                        Veggie Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row3/tofu.png" alt="" class="icone-24">
+                        <span>Veggie</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, tofu, 
+                        avocat, pousse de soja, tomate cerise, carotte, graine de sésame, coriandre.
+                    </div>
+                </div>
+                <!--- TUNA BOWL-->
+                <div class="carte">
+                    <div class="divImg tuna-bg"></div>
+                    <div class="titre">
+                        Tuna Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="grand-bowl" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="petit-bowl" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row3/thon.png" alt="thon" class="icone-24">
+                        <span>Thon</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, thon, 
+                        avocat, chou rouge, mangue, wakamé, graine de sésame, oignons cebette.
+                    </div>
+                </div>
+                <!--- SHAKA BOWL-->
+                <div class="carte">
+                    <div class="divImg shaka-bg"></div>
+                    <div class="titre">
+                        Shaka Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row3/thon.png" alt="" class="icone-24">
+                        <img src="images/bases/row2/saumon.png" alt="" class="icone-24">
+                        <span></span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, thon, 
+                        saumon, concombre, edamame, radis, graine de sésame, oignons cebette.
+                    </div>
+                </div>
+                <!--- VOLCANO BOWL-->
+                <div class="carte">
+                    <div class="divImg volcano-bg"></div>
+                    <div class="titre">
+                        Volcano Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row2/saumon marine.png" alt="saumon mariné" class="icone-24">
+                        <span>Saumon</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, saumon mariné, 
+                        avocat, concombre, edamame, pousse de soja, graine de sésame.
+                    </div>
+                </div>
+                <!--- ALOHA BOWL-->
+                <div class="carte">
+                    <div class="divImg aloha-bg"></div>
+                    <div class="titre">
+                        Aloha Bowl
+                        <hr>
+                    </div>
+                    <div class="tab">
+                        <img src="images/petit-bowl.png" alt="" class="icone-16">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/grand-bowl.png" alt="" class="icone-24">
+                        <span>Grand</span>
+                    </div>
+                    <div class="tab">
+                        <img src="images/bases/row3/daurade.png" alt="daurade" class="icone-24">
+                        <span>Daurade</span>
+                    </div>
+                    <div class="info">
+                        Les ingrédients : Base, daurade, 
+                        avocat, mangue, concombre, tomate cerise, graine de sésame, oignons cebette.
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+            </div>
+
+                    
+            
+            
+        </section>
+        <!--------- END LES SPECIALITÉS ---------->
+        <!---- START LES INGREDIENTS-->
+        <section class="" id="LesIngredients">
+            <div class="">
+                <div class="delimiter"></div>
+                <h3 class="section-subtitle">Les ingrédients</h3>
+                <h2 class="">Tous nos ingrédients sont frais.</h2>
+                <div class="delimiter"></div>
+                <div class="wrapper__signature">
+                    <h3>Les bases</h3>
+                    <ul class="hs full">
+                      <li class="item">
+                        <div class="round-pink">
+                            <img class="image__signature" src="images/bases/row1/rizblanc.png">
+                        </div>
+                        <p>Riz blanc</p>
+                      </li>
+                      <li class="item">
+                        <div class="round-pink">
+                            <img class="image__signature" src="images/bases/row1/rizbrun.png">
+                        </div>
+                        <p>Riz brun</p>
+                      </li>
+                      <li class="item">
+                        <div class="round-pink">
+                            <img class="image__signature" src="images/bases/row1/salade.png">
+                        </div>
+                        <p>Salade</p>
+                      </li>
+                    </ul>
+                    <h3>Les protéines</h3>
+                    <ul class="hs full no-scrollbar">
+                      <li class="item">
+                        <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row2/saumon.png">
+                        </div>
+                        <p>Saumon</p>
+                      </li>
+                      <li class="item">
+                        <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row2/crevettes.png">
+                        </div>
+                        <p>Crevettes</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row2/saumon marine.png">
+                          </div>
+                            <p style="text-align: center;">Saumon mariné</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row3/thon.png">
+                          </div>
+                        <p>Thon</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row3/daurade.png">
+                          </div>
+                        <p>Daurade</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-blue">
+                            <img class="image__signature" src="images/bases/row3/tofu.png">
+                          </div>
+                        <p>Tofu</p>
+                      </li>
+                    </ul>
+                    <h3>Les veggies</h3>
+                    <ul class="hs full no-scrollbar">
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row4/avocat.png">
+                          </div>
+                        <p>Avocat</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row4/oignon.png">
+                          </div>
+                        <p>Oignon</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row4/ananas.png">
+                          </div>
+                        <p>Ananas</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row5/radis.png">
+                          </div>
+                        <p>Radis</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row5/gingembre.png">
+                          </div>
+                        <p>Gingembre</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row5/concombre.png">
+                          </div>
+                        <p>Concombre</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row6/algues.png">
+                          </div>
+                        <p>Algues</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row6/edamame.png">
+                          </div>
+                        <p>Edamame</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row7/choixrouge.png">
+                          </div>
+                        <p>Choix rouge</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row7/mais.png">
+                          </div>
+                        <p>Maïs</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-green">
+                            <img class="image__signature" src="images/bases/row7/mangue.png">
+                          </div>
+                        <p>Mangue</p>
+                      </li>
+                    </ul>
+                    <h3>Les toppings</h3>
+                    <ul class="hs full no-scrollbar">
+                        <li class="item">
+                            <div class="round-salmon">
+                                <img class="image__signature" src="images/bases/row8/coriandre.png">
+                            </div>
+                            <p>Coriandre</p>
+                        </li>
+                      <li class="item">
+                          <div class="round-salmon">
+                            <img class="image__signature" src="images/bases/row8/oeufspoisson.png">
+                          </div>
+                        <p>Oeufs poisson</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-salmon">
+                            <img class="image__signature" src="images/bases/row8/oignonfrit.png">
+                          </div>
+                        <p>Oignon frit</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-salmon">
+                            <img class="image__signature" src="images/bases/row11/sesame.png">
+                          </div>
+                        <p>Graine de sésame</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-salmon">
+                            <img class="image__signature" src="images/bases/row11/ciboule.png">
+                          </div>
+                        <p>Oignon cebette</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-salmon">
+                            <img class="image__signature" src="images/bases/row11/sesame.png">
+                          </div>
+                        <p>Graine de sesame wasabi</p>
+                      </li>
+                    </ul>
+                    <h3>Les sauces</h3>
+                    <ul class="hs full no-scrollbar">
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row9/sauce1.png">
+                          </div>
+                        <p>Mayo Aioli</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row9/sauce2.png">
+                          </div>
+                        <p>Mayo epicée</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row9/sauce4.png">
+                          </div>
+                        <p>Soja épicée</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row10/sauce5.jpg">
+                          </div>
+                        <p>Vinaigrette ginger</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row10/sauce3.png">
+                          </div>
+                        <p>Soja salée/sucrée</p>
+                      </li>
+                      <li class="item">
+                          <div class="round-orange">
+                            <img class="image__signature" src="images/bases/row10/wasa.png">
+                          </div>
+                        <p>Mayo wasabi</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!--- END LES INGREDIENTS-->
+        <!----- START Contact-->
+        <section class="section_class item__contact " id="Contact">
+            <div class="delimiter"></div>
+            <h3 class="section-subtitle">Nos restaurants</h3>
+            <h2>Retrouvez nous dans nos restaurants.</h2>
+            <div class="delimiter"></div>
+            <div class="grid-two justify-content">
+                <div class="full-width">
+                    <div class="div1"> 
+                        <iframe class="divImg" style="top:0px;width:100%;height:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3612326786724!2d2.374518915397639!3d48.851321709158846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67206122b4e03%3A0xcce523c0f2d4f71a!2sMypoki!5e0!3m2!1sfr!2sfr!4v1589638115706!5m2!1sfr!2sfr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <div class="one-half">
+                            <h3>Mypoki Faubourg St Antoine</h3>
+                        
+                        <p>115 Rue du Faubourg Saint-Antoine,<br>75011 Paris, France <br>Tel : 01 43 07 58 11<br>Lun - Ven : <br>11h30 - 14h30 | 18h30 - 21h30<br>Sam : 12h - 15h <br>Dim : Fermé</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="full-width">
+                    <div class="div2"> 
+                        <iframe class="divImg" style="top:0px;width:100%;height:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.6750887055855!2d2.4302436153974547!3d48.84533590958028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672a2bf7c10d9%3A0xad02cfc2287257af!2sMypoki!5e0!3m2!1sfr!2sfr!4v1589639295600!5m2!1sfr!2sfr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <div class="one-half">
+                            <h3>Mypoki Vincennes</h3>
+                        
+                        <p>52 Rue de Paris,<br>94300 Vincennes, France<br>Tel : 01 43 98 01 39<br>Lun - Ven : <br>11h30 - 14h30 | 18h30 - 21h30 <br>Sam : 12h - 15h | 18h30 - 21h30 <br>Dim : 18h30 - 21h30</p>  
+                    </div>
+                    </div>
+                </div>      
+            </div>
+        </section>
+        <section class="bg_white" id="Press">
+            <div class="">
+                <div class="delimiter"></div>
+                <h3 class="section-subtitle">Press</h3>
+                <h2 class="section-title">Découvrez notre menu!</h2>
+                <div class="delimiter"></div>
+                <div class="grid-two-press">
+                    <div class="video-bg-1">
+                        <a href="https://www.youtube.com/watch?v=gbENOHyPYao">
+                          <img class="image__press" src="images/press/1.jpg">
+                        </a>
+                        <h5>Florian on air</h5>
+                        <p>Visite de Florian on air, au restaurant Mypoki du Faubourg St-Antoine.</p>
+                    </div>
+                    <div class="video-bg-2">
+                      <a href="https://www.facebook.com/330978237254796/posts/792279151124700/?d=w">
+                        <img class="image__press" src="images/press/2.jpg">
+                      </a>
+                        <h5>We Are Vincennes</h5>
+                        <p>Présentation du restaurant Mypoki de Vincennes.</p>   
+                    </div>                          
+                </div>
+            </div> 
+        </section>
+        <section id="section">
+          <div class="delimiter"></div>
+          <h3 class="section-subtitle">@Mypoki</h3>
+          <h2 class="section-title">Suivez nous sur Instagram!</h2>
+          <div id="instagram-feed1">
+          </div>
+        </section>
+
+        <div id="newsletter">
+          <form action="#" method="post" name="Rejoignez-nous">
+            <div class="header">
+               <h3>Rejoignez-nous</h3>
+            </div>
+            <div class="description">
+              <p>Votre poke est prêt. Rejoignez nous pour profiter de nos offres exclusives.</p>
+            </div>
+            <div class="input">
+              <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+              <input type="submit" class="button" id="submit" value="REJOIGNEZ-NOUS">
+            </div>
+          </form>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Mypoki</h4>
+                        <ul>
+                            <li>115 Rue du Faubourg Saint-Antoine,<br>
+                                75011 Paris, France<br>
+                                Tel : 01 43 07 58 11
+                                <a href="#"></a></li>
+                            <li>52 Rue de Paris,<br>
+                                94300 Vincennes, France<br>
+                                Tel : 01 46 81 44 59<a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Horaires</h4>
+                        <ul>
+                            <li><span>Lundi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Mardi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Mercredi  </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Jeudi     </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Vendredi  </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Samedi    </span><span>11h - 15h30</span><a href="#"></a></li>
+                            <li><span>Dimanche  </span><span>11h - 15h30</span><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Menu</h4>
+                        <ul>
+                          <li><a href="#Accueil" class="nav-link">Accueil</a></li>
+                          <li><a href="#Apropos" class="nav-link">À propos</a></li>
+                          <li><a href="#Menu" class="nav-link">Le Menu</a></li>
+                          <li><a href="#LesSignatures" class="nav-link">Les signatures</a></li>
+                          <li><a href="#LesIngredients" class="nav-link">Nos ingrédients</a></li>
+                          <li><a href="#Contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mypoki.fr/?ref=page_internal"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/mypoki/?hl=fr"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script src="insta/dist/InstagramFeed.min.js"></script>
+        <script>
+            (function(){
+                new InstagramFeed({
+                    'username': 'mypoki',
+                    'container': document.getElementById("instagram-feed1"),
+                    'display_profile': false,
+                    'display_biography': false,
+                    'display_gallery': true,
+                    'display_captions': true,
+                    'max_tries': 8,
+                    'callback': null,
+                    'styling': true,
+                    'items': 8,
+                    'items_per_row': 4,
+                    'margin': 1,
+                    'lazy_load': true,
+                    'on_error': console.error
+                });
+            })();
+        </script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    </body>
+</html>
