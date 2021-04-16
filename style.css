@@ -142,6 +142,7 @@ header
     font-size: 14px;
     z-index: 1;
 }
+
 header .logo {
     position: absolute;
     left: 0;
